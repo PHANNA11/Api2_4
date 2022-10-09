@@ -1,3 +1,4 @@
+import 'package:apis_fetch/screen/photos_screen.dart';
 import 'package:apis_fetch/screen/view_user_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: PhotosScreen(),
     );
   }
 }

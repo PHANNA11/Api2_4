@@ -15,10 +15,12 @@ class _MyHomePageState extends State<MyHomePage> {
   List<Users> listUser = [];
   getUserMethod() async {
     await jsonplaceholderController().getUserController().then((value) {
-      listUser = value;
-      for (var temp in listUser) {
-        print(temp.name);
-      }
+      setState(() {
+        listUser = value;
+        for (var temp in listUser) {
+          print(temp.name);
+        }
+      });
     });
   }
 
